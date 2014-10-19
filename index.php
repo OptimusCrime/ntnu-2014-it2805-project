@@ -11,7 +11,7 @@
 //
 
 define('BASE_DIR', dirname(__FILE__));
-define('TEMPLATE_DIR', BASE_DIR . '/templates/');
+define('TEMPLATE_DIR', BASE_DIR . '/templates');
 
 //
 // Set headers
@@ -50,7 +50,6 @@ class Loader {
         $this->template = new Smarty();
         $this->template->left_delimiter = '[[+'; 
         $this->template->right_delimiter = ']]';
-        $this->template->assign('TEMPLATE_DIR', TEMPLATE_DIR);
         $this->template->assign('TOP_LEVEL_MENU', '');
         $this->template->assign('SECOND_LEVEL_MENU', '');
         
