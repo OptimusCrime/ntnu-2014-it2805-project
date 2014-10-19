@@ -148,5 +148,3 @@ class Loader {
 //
 
 new Loader();
-
-?>
