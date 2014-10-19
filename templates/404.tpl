@@ -1,5 +1,5 @@
 [[+include file="header.tpl"]]
 
-<p>Show pack</p>
+<p>404</p>
 
 [[+include file="footer.tpl"]]
