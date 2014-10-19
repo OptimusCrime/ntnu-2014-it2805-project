@@ -1,0 +1,91 @@
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,th { font-size: 1em; font-weight: normal; font-style: normal; }
+ul,ol { list-style: none; }
+fieldset,img { border: none; }
+caption,th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+.clear { clear: both; }
+html{ overflow-y:scroll; }
+div { position: relative; }
+
+/*
+    Stuff
+*/
+
+body {
+    color: #555;
+    font-family: "Roboto",arial;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+#wrapper {
+    margin: auto;
+    max-width: 1200px;
+    min-width: 900px;
+    width: 90%;
+    padding-top: 20px;
+}
+a {
+    color: #7090a1;
+    text-decoration: none;
+    transition: color 0.5s ease 0s;
+}
+a:hover {
+    color: #aaa;
+}
+
+/*
+    Header
+*/
+#header {
+    border-bottom: 10px solid #cfdbe4;
+}
+#logo {
+    float: left;
+    width: 30%;
+}
+#menu {
+    float: left;
+    width: 70%;
+    font-size: 18px;
+    text-align: right;
+    width: 69%;
+    z-index: 100;
+}
+#menu li {
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+    transition: background 0.5s ease 0s;
+}
+#menu li:hover {
+    background: none repeat scroll 0 0 #b7c9d3;
+}
+#menu li:hover a {
+    color: #fff;
+}
+#menu li ul {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.96);
+    display: none;
+    left: 0;
+    margin-top: 5px;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    width: 200px;
+}
+#menu li:hover ul {
+    display: block;
+}
+#menu li ul li {
+    display: block;
+    margin-left: 0;
+}
+#menu li:hover ul li a {
+    color: #666;
+}
+#menu li:hover ul li:hover a {
+    color: #fff;
+}
+    
