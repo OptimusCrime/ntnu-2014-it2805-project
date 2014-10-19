@@ -138,6 +138,10 @@ class Loader {
     //
     
     private function return404() {
+        // Set header
+        header('HTTP/1.0 404 Not Found');
+        
+        // Fetch template
         $this->template->display('404.tpl');
     }
     
