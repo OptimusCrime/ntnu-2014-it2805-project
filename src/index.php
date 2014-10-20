@@ -7,18 +7,24 @@
 */
 
 //
+// Set headers
+//
+
+header('Content-Type: text/html; charset=utf-8');
+
+//
+// Set timezone
+//
+
+date_default_timezone_set('Europe/Oslo');
+
+//
 // Some variables
 //
 
 define('BASE_DIR', dirname(__FILE__));
 define('ROOT_DIR', dirname(BASE_DIR));
 define('TEMPLATE_DIR', BASE_DIR . '/templates');
-
-//
-// Set headers
-//
-
-header('Content-Type: text/html; charset=utf-8');
 
 //
 // Include the libraries
@@ -49,11 +55,19 @@ class Loader {
         //
         
         $this->template = new Smarty();
+        
+        // Set delimeter
         $this->template->left_delimiter = '[[+'; 
         $this->template->right_delimiter = ']]';
+        
+        // Set different directories
+        $this->template->setTemplateDir(TEMPLATE_DIR);
+        $this->template->setCompileDir(BASE_DIR . '/templates_c/');
+        $this->template->setCacheDir(BASE_DIR . '/cache/');
+        
+        // Set menu placeholders
         $this->template->assign('TOP_LEVEL_MENU', '');
         $this->template->assign('SECOND_LEVEL_MENU', '');
-        $this->template->setCacheDir(BASE_PATH . '/cache/');
         
         //
         // Analyze query
