@@ -11,6 +11,7 @@
 //
 
 define('BASE_DIR', dirname(__FILE__));
+define('ROOT_DIR', dirname(BASE_DIR));
 define('TEMPLATE_DIR', BASE_DIR . '/templates');
 
 //
@@ -23,7 +24,7 @@ header('Content-Type: text/html; charset=utf-8');
 // Include the libraries
 //
 
-require BASE_DIR . '/vendor/autoload.php';
+require ROOT_DIR . '/vendor/autoload.php';
 
 //
 // Class Loader (that loads the correct template)
@@ -52,6 +53,7 @@ class Loader {
         $this->template->right_delimiter = ']]';
         $this->template->assign('TOP_LEVEL_MENU', '');
         $this->template->assign('SECOND_LEVEL_MENU', '');
+        $this->template->setCacheDir(BASE_PATH . '/cache/');
         
         //
         // Analyze query
