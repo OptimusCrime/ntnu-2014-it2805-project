@@ -42,6 +42,7 @@ class Loader {
     // Internal variables
     //
     
+    private $query;
     private $template;
     
     //
@@ -70,10 +71,32 @@ class Loader {
         $this->template->assign('SECOND_LEVEL_MENU', '');
         
         //
+        // Chose query
+        //
+        
+        $this->choseQuery();
+        
+        //
         // Analyze query
         //
         
         $this->analyzeQuery();
+    }
+    
+    //
+    // Chose what query to analyze
+    //
+    
+    private function choseQuery() {
+        // Check if get parameter is empty
+        if (!isset($_GET['q'])) {
+            // Is empty, running PHP's built in server, fetch request uri
+            $this->query = $_SERVER['REQUEST_URI'];
+        }
+        else {
+            // Not using PHP's built in server, fetch get value
+            $this->query = $_GET['q'];
+        }
     }
     
     //
@@ -82,13 +105,13 @@ class Loader {
     
     private function analyzeQuery() {
         // Find out what file to display
-        if (!isset($_GET['q']) or strlen($_GET['q']) == 0) {
+        if ($this->query == '/' or strlen($this->query) == 0) {
             // Display index
             $this->template->display('index.tpl');
         }
         else {
             // Dynamically fetch template (or display 404)
-            $q_raw = explode('/', $_GET['q']);
+            $q_raw = explode('/', $this->query);
             $q = [];
             foreach ($q_raw as $v) {
                 if (strlen($v) > 0) {
