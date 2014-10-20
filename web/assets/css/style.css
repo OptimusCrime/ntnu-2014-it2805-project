@@ -51,11 +51,17 @@ a:hover {
 */
 
 #header {
+    padding-bottom: 20px;
     border-bottom: 10px solid #cfdbe4;
 }
 #logo {
     float: left;
     width: 30%;
+}
+#logo img {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
 #menu {
     float: left;
@@ -63,10 +69,18 @@ a:hover {
     font-size: 18px;
     text-align: right;
     z-index: 100;
+    font-size: 0;
+    height: 12%;
+}
+.menu {
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
 }
 #menu li {
+    font-size: 16px;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 1% 10px;
     position: relative;
     transition: background 0.5s ease 0s;
 }
@@ -104,6 +118,14 @@ a:hover {
 }
 
 /*
+    Container
+*/
+
+#container {
+    padding-top: 20px;
+}
+
+/*
     Footer
 */
 
@@ -122,5 +144,10 @@ a:hover {
 }
 .footer-column {
     float: left;
-    width: 50%;
+    width: 49%;
+    border-right: 1px solid #7090a1;
+}
+.footer-right {
+    border-right: none;
+    text-align: right;
 }
