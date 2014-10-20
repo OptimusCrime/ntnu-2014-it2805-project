@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,800" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,600,800" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
 </head>
 <body>
 <div id="wrapper">
@@ -16,44 +18,32 @@
         </header>
         <nav id="menu">
             <ul id="menu-hovedmeny" class="menu">
-                <li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-6">
-                    <a href="http://face-klinikk.no/">Forsiden</a>
-                </li>
-                <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25">
-                    <a href="http://face-klinikk.no/behandlinger/">Meny</a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31">
-                            <a href="http://face-klinikk.no/behandlinger/hudpleie/">Hudpleie</a>
+                <li[[+if $TOP_LEVEL_MENU == 'index']] class="selected"[[+/if]]>
+                    <a href="/">Forsiden</a>
+                </li><li[[+if $TOP_LEVEL_MENU == 'bestilling']] class="selected"[[+/if]]>
+                    <a href="/bestilling">Bestilling</a>
+                </li><li[[+if $TOP_LEVEL_MENU == 'priser']] class="selected"[[+/if]]>
+                    <a href="/priser">Priser</a>
+                </li><li[[+if $TOP_LEVEL_MENU == 'om-oss']] class="selected"[[+/if]]>
+                    <a href="/om-oss">Om oss</a>
+                </li><li[[+if $TOP_LEVEL_MENU == 'produkter']] class="selected"[[+/if]]>
+                    <a href="/produkter">Produkter</a>
+                    <ul>
+                        <li>
+                            <a href="/produkter/hairgel">Hårgelé</a>
                         </li>
-                        <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30">
-                            <a href="http://face-klinikk.no/behandlinger/voksing/">Voksing</a>
+                        <li>
+                            <a href="/produkter/showerpack">Balsam &amp; Shampoo &ndash; pakke</a>
                         </li>
-                        <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29">
-                            <a href="http://face-klinikk.no/behandlinger/hand-og-fot/">Hånd &#038; fot</a>
-                        </li>
-                        <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
-                            <a href="http://face-klinikk.no/behandlinger/brynstyling-og-vipper/">Brynstyling og vipper</a>
-                        </li>
-                        <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27">
-                            <a href="http://face-klinikk.no/behandlinger/make-up/">Make-up</a>
-                        </li>
-                        <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
-                            <a href="http://face-klinikk.no/behandlinger/pakker/">Pakker</a>
+                        <li>
+                            <a href="/produkter/barberkit">Barberkit</a>
                         </li>
                     </ul>
-                </li>
-                <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36">
-                    <a href="http://face-klinikk.no/produkter/">Produkter</a>
-                </li>
-                <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37">
-                    <a href="http://face-klinikk.no/om-oss/">Om oss</a>
-                </li>
-                <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40">
-                    <a href="http://face-klinikk.no/kontakt/">Kontakt</a>
+                </li><li>
+                    <a href="mailto:post@ikt-frisor.no">Kontakt oss</a>
                 </li>
             </ul>
         </nav>
         <div class="clear"></div>
-    </div>
     </div>
     <div id="container">

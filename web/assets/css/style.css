@@ -9,22 +9,26 @@ html{ overflow-y:scroll; }
 div { position: relative; }
 
 /*
-    Stuff
+    Main
 */
 
 body {
     color: #555;
-    font-family: "Roboto",arial;
+    font-family: "Open Sans",sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.8;
 }
-#wrapper {
-    margin: auto;
-    max-width: 1200px;
-    min-width: 900px;
-    width: 90%;
-    padding-top: 20px;
+h1, h2, h3, h4, h5 {
+    font-family: "Roboto",arial;
+}
+h1 {
+    color: #888;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 100;
+    margin: 10px 0;
+    text-align: center;
 }
 a {
     color: #7090a1;
@@ -34,10 +38,18 @@ a {
 a:hover {
     color: #aaa;
 }
+#wrapper {
+    margin: auto;
+    max-width: 1200px;
+    min-width: 900px;
+    width: 90%;
+    padding-top: 20px;
+}
 
 /*
     Header
 */
+
 #header {
     border-bottom: 10px solid #cfdbe4;
 }
@@ -50,7 +62,6 @@ a:hover {
     width: 70%;
     font-size: 18px;
     text-align: right;
-    width: 69%;
     z-index: 100;
 }
 #menu li {
@@ -64,6 +75,9 @@ a:hover {
 }
 #menu li:hover a {
     color: #fff;
+}
+#menu li.selected {
+    background: none repeat scroll 0 0 #b7c9d3;
 }
 #menu li ul {
     background: none repeat scroll 0 0 rgba(255, 255, 255, 0.96);
@@ -88,4 +102,25 @@ a:hover {
 #menu li:hover ul li:hover a {
     color: #fff;
 }
-    
+
+/*
+    Footer
+*/
+
+#footer {
+    background: none repeat scroll 0 0 #b7c9d3;
+    color: #fff;
+    margin-top: 80px;
+    padding: 20px 0;
+    width: 100%;
+}
+#footer-inner {
+    margin: auto;
+    max-width: 1200px;
+    min-width: 900px;
+    width: 90%;
+}
+.footer-column {
+    float: left;
+    width: 50%;
+}
