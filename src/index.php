@@ -107,6 +107,7 @@ class Loader {
         // Find out what file to display
         if ($this->query == '/' or strlen($this->query) == 0) {
             // Display index
+            $this->template->assign('TOP_LEVEL_MENU', 'index');
             $this->template->display('index.tpl');
         }
         else {
