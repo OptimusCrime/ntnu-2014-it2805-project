@@ -11,8 +11,8 @@
             <p>Fantasiveien 42</p>
             <p>7012, Trondheim</p>
         </div>
-        <div class="footer-column footer-right">
-            Map?
+        <div class="footer-column">
+            <div id="map"></div>
         </div>
         <div class="clear"></div>
     </div>
