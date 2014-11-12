@@ -7,6 +7,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 .clear { clear: both; }
 html{ overflow-y:scroll; }
 div { position: relative; }
+em { font-style: italic; }
+strong { font-weight: bold; }
 
 /*
     Main
@@ -135,6 +137,24 @@ a:hover {
     margin-top: 80px;
     padding: 20px 0;
     width: 100%;
+}
+#footer h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+#footer p, #footer a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+}
+#footer a:hover {
+    color: #7090a1;
+}
+#footer strong {
+    font-weight: 600;
 }
 #footer-inner {
     margin: auto;
