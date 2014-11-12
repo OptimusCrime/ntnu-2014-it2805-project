@@ -21,9 +21,6 @@
                 <li[[+if $TOP_LEVEL_MENU == 'index']] class="selected"[[+/if]]>
                     <a href="/">Forsiden</a>
                 </li>
-                <li[[+if $TOP_LEVEL_MENU == 'bestilling']] class="selected"[[+/if]]>
-                    <a href="/bestilling">Bestilling</a>
-                </li>
                 <li[[+if $TOP_LEVEL_MENU == 'priser']] class="selected"[[+/if]]>
                     <a href="/priser">Priser</a>
                 </li>
@@ -46,6 +43,9 @@
                 </li>
                 <li>
                     <a href="mailto:post@ikt-frisor.no">Kontakt oss</a>
+                </li>
+                <li class="order[[+if $TOP_LEVEL_MENU == ' bestilling']] selected[[+/if]]">
+                    <a href="/bestilling">Bestilling</a>
                 </li>
             </ul>
         </nav>
