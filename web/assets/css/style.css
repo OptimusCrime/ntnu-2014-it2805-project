@@ -42,9 +42,7 @@ a:hover {
 }
 #wrapper {
     margin: auto;
-    max-width: 1200px;
-    min-width: 900px;
-    width: 90%;
+    width: 1008px;
     padding-top: 20px;
 }
 
@@ -55,24 +53,25 @@ a:hover {
 #header {
     padding-bottom: 20px;
     border-bottom: 10px solid #cfdbe4;
+    width: 1008px;
+    height: 166px;
 }
 #logo {
     float: left;
-    width: 30%;
+    width: 333px;
+    height: 166px;
 }
 #logo img {
-    height: 100%;
-    width: 100%;
     display: block;
 }
 #menu {
     float: left;
-    width: 70%;
+    width: 675px;
+    height: 166px;
     font-size: 18px;
     text-align: right;
     z-index: 100;
     font-size: 0;
-    height: 12%;
 }
 .menu {
     position: absolute;
@@ -125,6 +124,7 @@ a:hover {
 
 #container {
     padding-top: 20px;
+    width: 1008px;
 }
 
 /*
@@ -158,16 +158,14 @@ a:hover {
 }
 #footer-inner {
     margin: auto;
-    max-width: 1200px;
-    min-width: 900px;
-    width: 90%;
+    width: 1008px;
 }
 .footer-column {
     float: left;
-    width: 50%;
+    width: 504px;
 }
 #map {
-    width: 100%;
+    width: 504px;
     height: 200px;
     float: right;
 }
