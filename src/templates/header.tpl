@@ -54,7 +54,7 @@
                 <li>
                     <a href="mailto:post@ikt-frisor.no">Kontakt oss</a>
                 </li>
-                <li class="order[[+if $TOP_LEVEL_MENU == ' bestilling']] selected[[+/if]]">
+                <li class="order[[+if $TOP_LEVEL_MENU == 'bestilling']] selected[[+/if]]">
                     <a href="bestilling">Bestilling</a>
                 </li>
             </ul>
