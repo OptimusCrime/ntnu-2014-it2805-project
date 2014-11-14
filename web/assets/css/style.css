@@ -340,3 +340,13 @@ a:hover {
     background: #b7c9d3;
     color: #fff;
 }
+
+/*
+    Remove stuff from the map, hax0r
+*/
+
+#map .gm-style > div > a > div,
+#map .gm-style-cc {
+    display: none;
+}
+
