@@ -67,7 +67,7 @@ class Loader {
         $this->template->setCacheDir(BASE_DIR . '/cache/');
         
         // Set caching
-        $this->template->setCaching(Smarty::CACHING_LIFETIME_CURRENT);
+        //$this->template->setCaching(Smarty::CACHING_LIFETIME_CURRENT);
         
         // Set menu placeholders
         $this->template->assign('TOP_LEVEL_MENU', '');
