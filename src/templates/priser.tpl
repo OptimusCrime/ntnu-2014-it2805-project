@@ -1,75 +1,67 @@
 [[+assign var="TITLE" value="Priser"]][[+include file="header.tpl"]]
 
-<div class="pris" id="wrap">
-<div class="pris" id="table">
-<ul>
-
-<li>
-  <div class="top">
-    <h1>Barn</h1>
-    <div class="circle">200<br>kr</div>
-  </div>
-  <div class="bottom">
-    <p class="info">Inkluderer:</p>
-    <p>Vask</p>
-    <p>Klipp</p>
-    <p>Styling</p>
-    <div class="sign">
-    <a href='BESTILLING' class='button'>BESTILL TIME</a>
+<div id="price">
+    <div class="price-element">
+        <div class="price-top">
+            <h2>Barn</h2>
+        </div>
+        <div class="price-body">
+            <div class="price-circle">200</div>
+            <p class="info">Inkluderer:</p>
+            <p>Vask</p>
+            <p>Klipp</p>
+            <p>Styling</p>
+        </div>
+        <div class="price-button">
+            <a href="bestilling">Bestill time</a>
+        </div>
     </div>
-  </div>
-</li>
-
-<li>
-  <div class="top">
-    <h1>Herre</h1>
-    <div class="circle">300</div>
-  </div>
-    <div class="bottom">
-    <p class="info">Inkluderer:</p>
-    <p>Vask</p>
-    <p>Klipp</p>
-    <p> Farge & Styling </p>
-    <div class="sign">
-    <a href='bestilling' class='button'>BESTILL TIME</a>
+    <div class="price-element">
+        <div class="price-top">
+            <h2>Herre</h2>
+        </div>
+        <div class="price-body">
+            <div class="price-circle">300</div>
+            <p class="info">Inkluderer:</p>
+            <p>Vask</p>
+            <p>Klipp</p>
+            <p> Farge & Styling</p>
+        </div>
+        <div class="price-button">
+            <a href="bestilling">Bestill time</a>
+        </div>
     </div>
-  </div>
-</li>
-
-<li>
-  <div class="top purple white">
-    <h1>Dame</h1>
-    <div class="circle pink">400</div>
-  </div>
-    <div class="bottom">
-    <p class="info">Inkluderer:</p>
-    <p>Vask</p>
-    <p>Klipp</p>
-    <p>Styling</p>
-    <div class="sign">
-    <a href='bestilling' class="button purple" style="color">BESTILL TIME</a>
+    <div class="price-element">
+        <div class="price-top">
+            <h2>Dame</h2>
+        </div>
+        <div class="price-body">
+            <div class="price-circle circle-1">400</div>
+            <p class="info">Inkluderer:</p>
+            <p>Vask</p>
+            <p>Klipp</p>
+            <p>Styling</p>
+        </div>
+        <div class="price-button">
+            <a href="bestilling">Bestill time</a>
+        </div>
     </div>
-  </div>
-</li>
-
-<li id="last">
-  <div class="top">
-    <h1>Style</h1>
-    <div class="circle">700</div>
-  </div>
-    <div class="bottom">
-    <p class="info">Inkluderer:</p>
-    <p>Vask & Kur</p>
-    <p>Klipp & Farge</p>
-    <p>Styling</p>
-    <div class="sign">
-    <a href='bestilling' class='button'>BESTILL TIME</a>
+    <div class="price-element">
+        <div class="price-top">
+            <h2>Style</h2>
+        </div>
+        <div class="price-body">
+            <div class="price-circle circle-1">400</div>
+            <p class="info">Inkluderer:</p>
+            <p>Vask & Kur</p>
+            <p>Klipp & Farge</p>
+            <p>Styling</p>
+        </div>
+        <div class="price-button">
+            <a href="bestilling">Bestill time</a>
+        </div>
     </div>
-  </div>
-</li>
-
-</ul>
-</div>
+    <div class="clear"></div>
 </div>
 
 
