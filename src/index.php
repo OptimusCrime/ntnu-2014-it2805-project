@@ -24,7 +24,6 @@ date_default_timezone_set('Europe/Oslo');
 
 define('BASE_DIR', dirname(__FILE__));
 define('ROOT_DIR', dirname(BASE_DIR));
-define('TEMPLATE_DIR', BASE_DIR . '/templates');
 
 //
 // Include the libraries
@@ -62,9 +61,12 @@ class Loader {
         $this->template->right_delimiter = ']]';
         
         // Set different directories
-        $this->template->setTemplateDir(TEMPLATE_DIR);
+        $this->template->setTemplateDir(BASE_DIR . '/templates/');
         $this->template->setCompileDir(BASE_DIR . '/templates_c/');
         $this->template->setCacheDir(BASE_DIR . '/cache/');
+        
+        // Set caching
+        $this->template->setCaching(Smarty::CACHING_LIFETIME_CURRENT);
         
         // Set menu placeholders
         $this->template->assign('TOP_LEVEL_MENU', '');
@@ -130,14 +132,14 @@ class Loader {
             }
             else if (count($q) == 1) {
                 // Root template, check if exists
-                if (file_exists(TEMPLATE_DIR . '/' . $q[0] . '.tpl')) {
+                if (file_exists(BASE_DIR . '/templates/' . $q[0] . '.tpl')) {
                     // Template exists, fetch it
                     $this->template->assign('TOP_LEVEL_MENU', $q[0]);
                     $this->template->display($q[0] . '.tpl');
                 }
                 else {
                     // No template named this, check if directory
-                    if (is_dir(TEMPLATE_DIR . '/' . $q[0])) {
+                    if (is_dir(BASE_DIR . '/templates/' . $q[0])) {
                         // Is directory, fetch index.tpl within that directory
                         $this->template->assign('TOP_LEVEL_MENU', $q[0]);
                         $this->template->display($q[0] . '/index.tpl');
