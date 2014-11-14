@@ -42,7 +42,6 @@ class Loader {
      * Internal variables
      */
     
-    private $query;
     private $template;
     
     /*
@@ -77,48 +76,26 @@ class Loader {
         $this->template->assign('URL', 'http://' . $_SERVER['HTTP_HOST']);
         
         /*
-         * Chose query
+         * Get tempate
          */
         
-        $this->choseQuery();
-        
-        /*
-         * Analyze query
-         */
-        
-        $this->analyzeQuery();
+        $this->getTemplate();
     }
     
     /*
-     * Chose what query to analyze
+     * Get the query based on the url
      */
     
-    private function choseQuery() {
-        // Check if get parameter is empty
-        if (!isset($_GET['q'])) {
-            // Is empty, running PHP's built in server, fetch request uri
-            $this->query = $_SERVER['REQUEST_URI'];
-        }
-        else {
-            // Not using PHP's built in server, fetch get value
-            $this->query = $_GET['q'];
-        }
-    }
-    
-    /*
-     * Analyze the query and check what template to load
-     */
-    
-    private function analyzeQuery() {
+    private function getTemplate() {
         // Find out what file to display
-        if ($this->query == '/' or strlen($this->query) == 0) {
+        if ($_SERVER['REQUEST_URI'] == '/' or strlen($_SERVER['REQUEST_URI']) == 0) {
             // Display index
             $this->template->assign('TOP_LEVEL_MENU', 'index');
             $this->template->display('index.tpl');
         }
         else {
             // Dynamically fetch template (or display 404)
-            $q_raw = explode('/', $this->query);
+            $q_raw = explode('/', $_SERVER['REQUEST_URI']);
             $q = [];
             foreach ($q_raw as $v) {
                 if (strlen($v) > 0) {
