@@ -124,8 +124,22 @@ a:hover {
 */
 
 #container {
+    width: 1008px;
+}
+.container-padd {
     padding-top: 20px;
     width: 1008px;
+}
+#container hr {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    height: 10px;
+    background-color: #cfdbe4;
+}
+#container .display-block {
+    display: block;
 }
 
 /*

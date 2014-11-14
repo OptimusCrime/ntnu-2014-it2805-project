@@ -1,5 +1,6 @@
 [[+include file="header.tpl"]]
-<h1> IKT Frisører</h1>
 
+<img src="assets/images/frontpage.jpg" alt="ITK-Frisør" class="display-block" />
+<hr />
 
 [[+include file="footer.tpl"]]
