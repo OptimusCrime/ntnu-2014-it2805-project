@@ -62,18 +62,24 @@ $(document).ready(function () {
 
     // Bestilling - Datepicker
     $('#datepicker').datetimepicker({
-        //var times = ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00'];
-        format:'d.m.Y H:i',
+        format: 'd.m.Y H:i',
         inline: true,
-        lang:'no',
+        lang: 'no',
         allowTimes:['10:00', '11:00', '12:00', '13:00', '14:00', '15:00'],
-        afterSelectDate:function(dp,$input){
+        afterSelectDate: function(list) {
+            var new_list = '';
 
-          $('.xdsoft_time').remove();
-
-
-        }
-
+            $($(list), 'div').each(function () {
+                if (!$(this).hasClass('xdsoft_current')) {
+                    console.log(Math.floor(Math.random() * 1 + 1));
+                    if ((Math.floor(Math.random() * 10) + 1) <= 7) {
+                        new_list += $(this)[0].outerHTML;
+                    }
+                }
+            });
+            
+            return new_list;
+        },
     });
 
     // Set mouseover

@@ -1252,7 +1252,11 @@
 								line_time(h, m);
 							}
 						}
-
+                        console.log(event);
+                        if (options.afterSelectDate &&	$.isFunction(options.afterSelectDate)) {
+                            // time = options.afterSelectDate.call(('foo'), time);
+                        }
+                        
 						timebox.html(time);
 
 						opt = '';
@@ -1335,9 +1339,7 @@
 						timerclick = 0;
 					}, 200);
                     
-                    if (options.afterSelectDate &&	$.isFunction(options.afterSelectDate)) {
-						options.afterSelectDate.call(datetimepicker, _xdsoft_datetime.currentTime, datetimepicker.data('input'), xdevent);
-					}
+                    
 				});
 
 			timebox
