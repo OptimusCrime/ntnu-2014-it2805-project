@@ -103,7 +103,7 @@ a:hover {
     padding: 0;
     position: absolute;
     text-align: left;
-    width: 200px;
+    width: 260px;
 }
 #menu li:hover ul {
     display: block;
