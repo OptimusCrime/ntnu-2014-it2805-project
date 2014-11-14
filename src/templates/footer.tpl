@@ -7,12 +7,12 @@
 
             <p>&nbsp;</p>
 
-            <p>Fantasiveien 42</p>
-            <p>7012, Trondheim</p>
+            <p>Olav Tryggvasons gate 101</p>
+            <p>7011, Trondheim</p>
 
             <p>&nbsp;</p>
 
-            <p><strong>Tlf:</strong> 999 99 999</p>
+            <p><strong>Tlf:</strong> 99 25 11 19</p>
             <p><strong>Mail:</strong> <a href="mailto:post@ikt-frisor.no">post@ikt-frisor.no</a></p>
         </div>
         <div class="footer-column">
