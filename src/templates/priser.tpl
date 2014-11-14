@@ -1,5 +1,9 @@
 [[+assign var="TITLE" value="Priser"]][[+include file="header.tpl"]]
 
+<h1>Priser</h1>
+
+<p class="center">Under er en komplett prisliste på våre forskjellige klipper. Ta gjerne <a href="mailto:post@itk-frisor.no">kontakt</a> om du ønsker noe som ikke står listet opp i prislista.</p>
+
 <div id="price">
     <div class="price-element">
         <div class="price-top">

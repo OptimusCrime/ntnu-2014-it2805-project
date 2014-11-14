@@ -9,6 +9,7 @@ html{ overflow-y:scroll; }
 div { position: relative; }
 em { font-style: italic; }
 strong { font-weight: bold; }
+p.center { text-align: center; }
 
 /*
     Main
@@ -27,7 +28,6 @@ h1, h2, h3, h4, h5 {
 h1 {
     color: #888;
     font-size: 40px;
-    font-style: italic;
     font-weight: 100;
     margin: 10px 0;
     text-align: center;
@@ -257,16 +257,16 @@ a:hover {
     font-size: 18px;
     font-weight: 600;
 }
-.sign .button {
-    margin-top:50px;
+.price-button {
+    margin: 0 auto;
+    margin-top: 20px;
     border: 1px solid #989A8F;
-    padding: 10px 40px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
+    padding: 10px 0px;
     border-radius: 6px;
     color: #989A8F;
     font-size: 14px;
     text-decoration: none;
     vertical-align: middle;
-    font-size:17px;
+    font-size: 17px;
+    width: 165px;
 }
