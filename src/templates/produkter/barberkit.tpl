@@ -1,4 +1,4 @@
-[[+include file="header.tpl"]]
+[[+assign var="TITLE" value="Produkter :: Barberkit"]][[+include file="header.tpl"]]
 
 <p>Barberkit</p>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ITK-Frisør</title>
+    <title>ITK-Frisør[[+if isset($TITLE)]] :: [[+$TITLE]][[+/if]]</title>
     <base href="[[+$URL]]" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
