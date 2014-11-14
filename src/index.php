@@ -1,58 +1,59 @@
 <?php
 /*
- *
  * File: index.php
- * Description: Main controller
- *
+ * Description: Project root file
+ * Written by: Thomas Gautvedt, Krisitan Ekle, Ingeborg Ødegård Oftedal
+ * Project: IT2805 2014
+ * Copyright: Meh
 */
 
-//
-// Set headers
-//
+/*
+ * Set headers
+ */
 
 header('Content-Type: text/html; charset=utf-8');
 
-//
-// Set timezone
-//
+/*
+ * Set timezone
+ */
 
 date_default_timezone_set('Europe/Oslo');
 
-//
-// Some variables
-//
+/*
+ * Define some variables
+ */
 
 define('BASE_DIR', dirname(__FILE__));
 define('ROOT_DIR', dirname(BASE_DIR));
 
-//
-// Include the libraries
-//
+/*
+ * Composer autoloader
+ */
 
 require ROOT_DIR . '/vendor/autoload.php';
 
-//
-// Class Loader (that loads the correct template)
-//
+/*
+ * Class Loader - Loads the different templates
+ */
 
 class Loader {
     
-    //
-    // Internal variables
-    //
+    /*
+     * Internal variables
+     */
     
     private $query;
     private $template;
     
-    //
-    // Constructor
-    //
+    /*
+     * Constructor
+     */
     
     public function __construct() {
         
-        //
-        // Smarty
-        //
+        /*
+         * Smarty
+         */
         
         $this->template = new Smarty();
         
@@ -72,25 +73,25 @@ class Loader {
         $this->template->assign('TOP_LEVEL_MENU', '');
         $this->template->assign('SECOND_LEVEL_MENU', '');
         
-        // Set base urldecode
+        // Get the base url
         $this->template->assign('URL', 'http://' . $_SERVER['HTTP_HOST']);
         
-        //
-        // Chose query
-        //
+        /*
+         * Chose query
+         */
         
         $this->choseQuery();
         
-        //
-        // Analyze query
-        //
+        /*
+         * Analyze query
+         */
         
         $this->analyzeQuery();
     }
     
-    //
-    // Chose what query to analyze
-    //
+    /*
+     * Chose what query to analyze
+     */
     
     private function choseQuery() {
         // Check if get parameter is empty
@@ -104,9 +105,9 @@ class Loader {
         }
     }
     
-    //
-    // Analyze the query and check what template to load
-    //
+    /*
+     * Analyze the query and check what template to load
+     */
     
     private function analyzeQuery() {
         // Find out what file to display
@@ -178,9 +179,9 @@ class Loader {
         }
     }
     
-    //
-    // Return 404 template
-    //
+    /*
+     * Return 404 template
+     */
     
     private function return404() {
         // Set header
@@ -192,8 +193,8 @@ class Loader {
     
 }
 
-//
-// New instance of Loader
-//
+/*
+* New instance of Loader
+*/
 
 new Loader();

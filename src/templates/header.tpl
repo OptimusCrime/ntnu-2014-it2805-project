@@ -9,7 +9,7 @@
     <meta name="keywords" content="" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,800" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,600,800" />
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.min.css"/ >
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCllJyO8J0APYYx5E8GeQyamUFsZyrwZ_A"></script>
