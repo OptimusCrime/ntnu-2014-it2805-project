@@ -215,3 +215,58 @@ a:hover {
     height: 200px;
     float: right;
 }
+
+/*
+    Priser
+*/
+
+#price {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.price-element  {
+    float: left;
+    width: 199px;
+    text-align: center;
+    border-left: 1px solid #DDDCD8;
+}
+.price-top {
+    background-color: #cfdbe4;
+}
+#container .price-top h2 {
+    margin-top: 0;
+}
+.price-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    background: #7090a1;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.circle-1 {
+    background-color: #aaa;
+}
+.price-body .info {
+    font-size: 18px;
+    font-weight: 600;
+}
+.sign .button {
+    margin-top:50px;
+    border: 1px solid #989A8F;
+    padding: 10px 40px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #989A8F;
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size:17px;
+}
