@@ -55,6 +55,7 @@ a:hover {
     border-bottom: 10px solid #cfdbe4;
     width: 1008px;
     height: 166px;
+    z-index: 100;
 }
 #logo {
     float: left;

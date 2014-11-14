@@ -1,4 +1,4 @@
-[[+include file="header.tpl"]]
+[[+assign var="TITLE" value="Produkter"]][[+include file="header.tpl"]]
 
 <p>Produkter</p>
 

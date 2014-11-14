@@ -1,4 +1,4 @@
-[[+include file="header.tpl"]]
+[[+assign var="TITLE" value="Priser"]][[+include file="header.tpl"]]
 
 <div class="pris" id="wrap">
 <div class="pris" id="table">

@@ -70,6 +70,9 @@ class Loader {
         $this->template->assign('TOP_LEVEL_MENU', '');
         $this->template->assign('SECOND_LEVEL_MENU', '');
         
+        // Set base urldecode
+        $this->template->assign('URL', 'http://' . $_SERVER['HTTP_HOST']);
+        
         //
         // Chose query
         //
