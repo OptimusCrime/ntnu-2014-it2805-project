@@ -68,5 +68,4 @@
     <div class="clear"></div>
 </div>
 
-
 [[+include file="footer.tpl"]]
