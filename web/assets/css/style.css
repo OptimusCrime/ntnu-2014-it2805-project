@@ -349,3 +349,59 @@ a:hover {
 #map .gm-style-cc {
     display: none;
 }
+
+/*
+    Frontpage
+*/
+
+#frontpage h1,
+#frontpage h2 {
+    position: absolute;
+    font-style: italic; 
+}
+#frontpage h1 {
+    left: 20px;
+    top: 50px;
+    font-size: 90px;
+}
+#frontpage h2 {
+    left: 20px;
+    top: 20px;
+    font-size: 40px;
+}
+#frontpage-info {
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+}
+#frontpage-info p {
+    line-height: 1em;
+}
+
+/*
+    Employee
+*/
+
+.employee-text, .employee-image {
+    float: left;
+}
+.employee-text {
+    width: 703px;
+    padding-right: 15px;
+}
+.employee-text.emplyee-inverted {
+    padding-left: 15px;
+    padding-right: 0px;
+}
+.employee-image {
+    width: 290px;
+    text-align: center;
+}
+#container .employee-image p {
+    font-size: 14px;
+    line-height: 20px;
+}
+#container .employee-text h2 {
+    margin-top: 0px;
+    line-height: 1em;
+}
