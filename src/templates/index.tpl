@@ -1,6 +1,9 @@
 [[+include file="header.tpl"]]
-
-<img src="assets/images/frontpage.jpg" alt="ITK-Frisør" class="display-block" />
+<div id="frontpage">
+    <h2>Velkommen til</h2>
+    <h1>IKT-Firsør</h1>
+    <img src="assets/images/frontpage.jpg" alt="ITK-Frisør" class="display-block" />
+</div>
 <hr />
 <div class="container-padd">
     <div class="col-2">
@@ -17,5 +20,4 @@
     </div>
     <div class="clear"></div>
 </div>
-
 [[+include file="footer.tpl"]]
