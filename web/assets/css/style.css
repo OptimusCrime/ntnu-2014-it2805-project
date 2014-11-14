@@ -124,10 +124,55 @@ a:hover {
 */
 
 #container {
+    width: 1008px;
+}
+.container-padd {
     padding-top: 20px;
     width: 1008px;
 }
+#container hr {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    height: 10px;
+    background-color: #cfdbe4;
+}
+#container .display-block {
+    display: block;
+}
+#container .col-2 {
+    width: 484px;
+    float: left;
+    padding-right: 20px;
+}
+#container .col-2-right {
+    padding-right: 0px;
+    padding-left: 20px;
+}
 
+/*
+    Element styles
+*/
+
+#container  h1,
+#container  h2,
+#container  h3 {
+    color: #888;
+    font-weight: 100;
+    margin: 10px 0;
+}
+#container  h1 {
+    font-size: 40px;
+}
+#container  h2 {
+    font-size: 32px;
+}
+#container p {
+    font-size: 14px;
+    padding-bottom: 13px;
+}
+    
 /*
     Footer
 */
