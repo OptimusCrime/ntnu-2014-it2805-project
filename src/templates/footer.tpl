@@ -21,5 +21,15 @@
         <div class="clear"></div>
     </div>
 </div>
+<div>
+    <p>
+        <span>ITK-Frisør &copy; 2014</span>::
+        <span><a href="priser">Priser</a></span>::
+        <span><a href="om">Om oss</a></span>::
+        <span><a href="produkter">Produkter</a></span>::
+        <span><a href="mailto:itk-frisor.no">Kontakt</a></span>::
+        <span><a href="bestilling">Bestilling</a></span>
+    </p>
+</div>
 </body>
 </html>
