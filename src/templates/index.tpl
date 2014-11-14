@@ -1,5 +1,5 @@
 [[+include file="header.tpl"]]
+<h1> IKT Frisører</h1>
 
-<p>Index</p>
 
 [[+include file="footer.tpl"]]
