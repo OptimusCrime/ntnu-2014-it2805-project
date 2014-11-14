@@ -267,6 +267,7 @@
 		theme: '',
 
 		onSelectDate: function () {},
+		afterSelectDate: function () {},
 		onSelectTime: function () {},
 		onChangeMonth: function () {},
 		onChangeYear: function () {},
@@ -1333,6 +1334,10 @@
 					setTimeout(function () {
 						timerclick = 0;
 					}, 200);
+                    
+                    if (options.afterSelectDate &&	$.isFunction(options.afterSelectDate)) {
+						options.afterSelectDate.call(datetimepicker, _xdsoft_datetime.currentTime, datetimepicker.data('input'), xdevent);
+					}
 				});
 
 			timebox
