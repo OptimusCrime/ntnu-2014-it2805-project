@@ -33,7 +33,7 @@
                 </li>
                 <li[[+if $TOP_LEVEL_MENU == 'produkter']] class="selected"[[+/if]]>
                     <a href="produkter">Produkter</a>
-                    <ul>
+                    <ul class="sub-menu">
                         <li>
                             <a href="produkter/hairgel">Hårgelé</a>
                         </li>
