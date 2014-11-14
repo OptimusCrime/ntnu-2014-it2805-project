@@ -55,7 +55,7 @@
             <h2>Style</h2>
         </div>
         <div class="price-body">
-            <div class="price-circle circle-1">400</div>
+            <div class="price-circle circle-1">600</div>
             <p class="info">Inkluderer:</p>
             <p>Vask & Kur</p>
             <p>Klipp & Farge</p>
