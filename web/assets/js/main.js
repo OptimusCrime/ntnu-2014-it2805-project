@@ -67,15 +67,9 @@ $(document).ready(function () {
         inline: true,
         lang:'no',
         allowTimes:['10:00', '11:00', '12:00', '13:00', '14:00', '15:00'],
-        onSelectDate:function(dp,$input){
+        afterSelectDate:function(dp,$input){
 
-          $('.xdsoft_time').each(function() {
-            console.log("removing");
-            setTimeout(function ($obj) {
-              console.log($obj);
-              $obj.remove();
-            }($(this)), 200);
-          });
+          $('.xdsoft_time').remove();
 
 
         }
