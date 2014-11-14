@@ -11,9 +11,14 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,600,800" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/priser.css" />
+    <!-- Datepicker -->
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.datetimepicker.css"/ >
+    <!-- /Datepicker -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCllJyO8J0APYYx5E8GeQyamUFsZyrwZ_A"></script>
+    <script src="assets/js/jquery.datetimepicker.js"></script>
     <script src="assets/js/main.js"></script>
+
 </head>
 <body>
 <div id="wrapper">

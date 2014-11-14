@@ -54,7 +54,7 @@
 
 <li id="last">
   <div class="top">
-    <h1>Dame2</h1>
+    <h1>Style</h1>
     <div class="circle">700</div>
   </div>
     <div class="bottom">

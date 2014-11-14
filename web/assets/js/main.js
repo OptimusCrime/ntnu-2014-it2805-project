@@ -6,7 +6,7 @@
 function load_map() {
     // Set positions
     var officePos = new google.maps.LatLng(60.18577171428199,10.253432506607055);
-    
+
     // Create map with these settings
     var map = new google.maps.Map(document.getElementById("map"),{
         center: officePos,
@@ -14,13 +14,13 @@ function load_map() {
         streetViewControl: false,
         scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.HYBRID});
-    
+
     // Create marker
     var marker = new google.maps.Marker({
         position: officePos,
         map: map,
         title: 'Gran'
-    }); 
+    });
 }
 
 /*
@@ -30,7 +30,7 @@ function load_map() {
 function menu_mouseover(e) {
     // Store reference
     var $obj = $(e.target);
-    
+
     // Fire only on li on/out
     if ($obj.prop('tagName').toLowerCase() == 'li') {
         // Check if we should force submenu to stay open
@@ -59,7 +59,15 @@ function menu_mouseout() {
 $(document).ready(function () {
     // Load map
     load_map();
-    
+
+    // Bestilling - Datepicker
+    $('#datepicker').datetimepicker({
+        format:'d.m.Y H:i',
+        inline: true,
+        lang:'no'
+
+    });
+
     // Set mouseover
     $('.menu li').on('mouseover', menu_mouseover);
     $('.menu > li > ul').on('mouseleave', menu_mouseout);
