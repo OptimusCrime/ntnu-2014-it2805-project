@@ -2,6 +2,11 @@
 <div id="frontpage">
     <h2>Velkommen til</h2>
     <h1>IKT-Firsør</h1>
+    <div id="frontpage-info">
+        <p>Mandag - Lørdag: 10:00 - 16:00</p>
+        <p>Herreklipp fra 300,-</p>
+        <p>Dameklipp fra 400,-</p>
+    </div>
     <img src="assets/images/frontpage.jpg" alt="ITK-Frisør" class="display-block" />
 </div>
 <hr />
