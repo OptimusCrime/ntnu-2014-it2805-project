@@ -19,8 +19,10 @@
 <body>
 <div id="wrapper">
     <div id="header">
-        <header id="logo">
-            <a href=""><img src="assets/images/logo.png" alt="IKT-frisør" /></a>
+        <header id="logo-wrapper">
+            <div id="logo">
+                <a href=""><img src="assets/images/logo.png" alt="IKT-frisør" /></a>
+            </div>
         </header>
         <nav id="menu">
             <ul class="menu">
