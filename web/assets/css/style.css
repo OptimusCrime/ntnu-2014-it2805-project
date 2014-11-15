@@ -87,24 +87,29 @@ a:hover {
 #menu li {
     font-size: 16px;
     display: inline-block;
-    padding: 1% 10px;
     position: relative;
     transition: background 0.5s ease 0s;
 }
+#menu li a {
+    display: inline-block;
+    padding: 5px 13px;
+}
 #menu li:hover {
-    background: none repeat scroll 0 0 #b7c9d3;
+    background: none repeat scroll 0 0 #7090a1;
 }
 #menu li:hover a {
     color: #fff;
 }
 #menu li.selected {
-    background: none repeat scroll 0 0 #b7c9d3;
+    background: none repeat scroll 0 0 #7090a1;
+}
+#menu li.selected a {
+    color: #cfdbe4;
 }
 #menu li ul {
     background: none repeat scroll 0 0 rgba(255, 255, 255, 0.96);
     display: none;
     left: 0;
-    margin-top: 5px;
     padding: 0;
     position: absolute;
     text-align: left;
@@ -122,6 +127,9 @@ a:hover {
 }
 #menu li:hover ul li:hover a {
     color: #fff;
+}
+#menu li ul li:hover {
+    background: none repeat scroll 0 0 #b7c9d3;
 }
 
 /*
