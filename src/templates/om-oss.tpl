@@ -1,7 +1,8 @@
 [[+assign var="TITLE" value="Om oss"]][[+include file="header.tpl"]]
 <h1 class="center">Om oss</h1>
-<p>IKT-Firsør så dagens lys en kjølig november kveld i 2009. Grunnleggerne hadde tidligere studert hårkur sammen og hadde vært venner siden barndommen. Tanken om å starte en egen bedrift klekket en dag de så på MacGyver, og alle tre var øyeblikkelig med på ideen. Ikke mindre enn tre måneder seinere var salong kjøpt, foretak registrert og redskaper på plass. Innlagt vann og avløp kom riktignok en måned senere, etter kluss med kommunen.</p>
-<h3>Her er kort om hver enkelt:</h3>
+<div class="block">
+    <p>IKT-Firsør så dagens lys en kjølig november kveld i 2009. Grunnleggerne hadde tidligere studert hårkur sammen og hadde vært venner siden barndommen. Tanken om å starte en egen bedrift klekket en dag de så på MacGyver, og alle tre var øyeblikkelig med på ideen. Ikke mindre enn tre måneder seinere var salong kjøpt, foretak registrert og redskaper på plass. Innlagt vann og avløp kom riktignok en måned senere, etter kluss med kommunen.</p>
+</div>
 <div class="employee-wrapper">
     <div class="employee-text">
         <h2>Ingeborg Ødegård Oftedal</h2>
