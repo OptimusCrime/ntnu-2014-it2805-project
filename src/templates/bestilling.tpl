@@ -11,7 +11,7 @@
             </div>
             <div class="clear"></div>
         </div>
-        <div class="order-block">
+        <div class="order-block order-block-top-padding">
             <div class="order-left">
                 <p>Velg klokkeslett:</p>
             </div>
@@ -25,7 +25,12 @@
                 <p>Velg produkt:</p>
             </div>
             <div class="order-right">
-                <p>derp</p>
+                <select name="product" id="product">
+                    <option value="children">Barn &mdash; 200,-</option>
+                    <option value="gentleman">Herre &mdash; 300,-</option>
+                    <option value="lady">Barn &mdash; 400,-</option>
+                    <option value="style">Style &mdash; 700,-</option>
+                </select>
             </div>
             <div class="clear"></div>
         </div>

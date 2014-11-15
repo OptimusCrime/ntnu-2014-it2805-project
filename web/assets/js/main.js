@@ -55,6 +55,11 @@ function load_calendar() {
             
             // Display slots
             load_available(calculated_days[day]);
+            
+            // Appply jQuery magic
+            $('#slots select').selectmenu({
+                width: 400,
+            });
         },
     });
 }
@@ -82,12 +87,17 @@ $(document).ready(function () {
     // Load map
     load_map();
     
-    // Caldnar stuff
+    // Calendar stuff
     if ($('#calendar').length > 0) {
         // Load the calendar
         load_calendar();
         
         // Trigger click on the current day
         $('#calendar .ui-state-highlight').trigger('click');
+        
+        // Apply jQuery magic to product dropdown
+        $('#product').selectmenu({
+            width: 400,
+        });
     }
 });

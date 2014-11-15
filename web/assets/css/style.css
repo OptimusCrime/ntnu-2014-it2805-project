@@ -310,6 +310,9 @@ a:hover {
 #order .order-right {
     width: 400px;
 }
+#order .order-block.order-block-top-padding {
+    padding-top: 15px;
+}
 #calendar .ui-widget {
     font-family: "Open Sans",sans-serif;
     color: #555;
@@ -343,6 +346,8 @@ a:hover {
     cursor: pointer;
     top: 0px;
     left: 0px;
+    height: 36px;
+    width: 36px;
 }
 #calendar .ui-datepicker .ui-datepicker-next {
     left: auto;
@@ -352,7 +357,6 @@ a:hover {
     background-color: #b7c9d3;
     border-radius: 0px;
 }
-
 #calendar  .ui-widget-header .ui-state-hover .ui-icon {
     background-image: url('images/ui-icons_ffffff_256x240.png');
 }
@@ -372,6 +376,47 @@ a:hover {
 #calendar .ui-state-hover {
     background: #b7c9d3;
     color: #fff;
+}
+#calendar .ui-datepicker-title {
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 0.4em 2.1em 0.4em 1em;
+    font-weight: 600;
+}
+#order .ui-selectmenu-button {
+    background: #7090a1;
+    border-radius: 0px;
+    border: none;
+    color: #fff;
+}
+#order .ui-selectmenu-button .ui-icon {
+    background-image: url('images/ui-icons_ffffff_256x240.png');
+}
+#order .ui-selectmenu-button .ui-selectmenu-text {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.ui-selectmenu-menu .ui-menu {
+    background: none;
+    background-color: #fff;
+    border-radius: 0px;
+    border: 1px solid #7090a1;
+    padding-bottom: 0px;
+}
+.ui-selectmenu-menu .ui-menu-item {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 0.4em 2.1em 0.4em 1em;
+}
+.ui-selectmenu-menu .ui-state-focus {
+    background: none;
+    border: none;
+    margin: 0px;
+    background-color: #cfdbe4;
+    color: #7090a1;
 }
 
 /*
