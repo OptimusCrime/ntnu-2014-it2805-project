@@ -299,7 +299,16 @@ a:hover {
 */
 
 #order {
-    padding-top: 30px;
+    width: 600px;
+    margin: 0 auto;
+}
+#order .order-left,
+#order .order-right {
+    float: left;
+    width: 200px;
+}
+#order .order-right {
+    width: 400px;
 }
 #calendar .ui-widget {
     font-family: "Open Sans",sans-serif;
@@ -312,6 +321,7 @@ a:hover {
     border-radius: 0px;
     border: none;
     padding: 0px;
+    width: 400px;
 }
 #calendar .ui-datepicker-header {
     background: none;
