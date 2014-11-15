@@ -432,3 +432,29 @@ a:hover {
     margin-top: 0px;
     line-height: 1em;
 }
+
+/*
+    Bottom
+*/
+
+#bottom {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#bottom p {
+    font-size: 13px;
+}
+#bottom span {
+    padding-left: 7px;
+    padding-right: 11px;
+}
+#bottom span.first {
+    padding-left: 0px;
+    font-weight: 600;
+    color: #7090a1;
+}
+#bottom span.last {
+    padding-right: 0px;
+}
