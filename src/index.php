@@ -103,10 +103,12 @@ class Loader {
                 }
             }
             
+            $display_404 = false;
+            
             // Check what was returned
             if (count($q) == 0) {
                 // Return 404
-                $this->return404();
+                $display_404 = true;
             }
             else if (count($q) == 1) {
                 // Root template, check if exists
@@ -124,7 +126,7 @@ class Loader {
                     }
                     else {
                         // Is not a directory, just return 404
-                        $this->return404();
+                        $display_404 = true;
                    }
                 }
             }
@@ -132,7 +134,7 @@ class Loader {
                 // Rebuild query
                 $query = implode('/', $q);
                 
-                if (file_exists(TEMPLATE_DIR . '/' . $query . '.tpl')) {
+                if (file_exists(BASE_DIR . '/templates/' . $query . '.tpl')) {
                     // Template exists, fetch it
                     $this->template->assign('TOP_LEVEL_MENU', $q[0]);
                     $this->template->assign('SECOUND_LEVEL_MENU', $q[count($q) - 1]);
@@ -140,7 +142,7 @@ class Loader {
                 }
                 else {
                     // No template named this, check if directory
-                    if (is_dir(TEMPLATE_DIR . '/' . $query)) {
+                    if (is_dir(BASE_DIR . '/templates/' . $query)) {
                         // Is directory, fetch index.tpl within that directory
                         $this->template->assign('TOP_LEVEL_MENU', $q[0]);
                         $this->template->assign('SECOUND_LEVEL_MENU', $q[count($q) - 1]);
@@ -149,8 +151,31 @@ class Loader {
                     }
                     else {
                         // Is not a directory, just return 404
-                        $this->return404();
+                        $display_404 = true;
                    }
+                }
+            }
+            
+            // Check if we should display 404
+            if ($display_404) {
+                // We should display 404, but first check if any static files matches this url
+                $file = ROOT_DIR . '/files/' . implode('/', $q);
+                if (file_exists($file)) {
+                    // Get mime type
+                    $mime_type = mime_content_type($file);
+                    
+                    // Set header
+                    header('Content-Type: ' . $mime_type . '; charset=utf-8');
+                    
+                    // Assign content
+                    $this->template->assign('CONTENT', file_get_contents($file));
+                    
+                    // Display flatfile template
+                    $this->template->display('flat.tpl');
+                }
+                else {
+                    // File was not found, display 404
+                    $this->return404();
                 }
             }
         }
