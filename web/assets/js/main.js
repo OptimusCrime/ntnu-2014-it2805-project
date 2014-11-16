@@ -103,18 +103,26 @@ function initialize_order() {
     switch (cat) {
       case "barn":
         console.log("barn");
+        $('#product option[value=children]').attr('selected', 'selected');
+        $('#ui-selectmenu-text').html("Barn 200,-");
         //TODO: Set barn selected
         break;
       case "herre":
         console.log("herre");
+        $('#product option[value=gentleman]').attr('selected', 'selected');
+        $('#ui-selectmenu-text').html("Herre 300,-");
         //TODO: Set herre selected
         break;
       case "dame":
         console.log("dame");
+        $('#ui-id-1').val('lady');
+        $('#ui-selectmenu-text').html("Dame 400,-");
         //TODO: Set dame selected
         break;
       case "style":
         console.log("style");
+        $('#ui-id-1').val('style');
+        $('#ui-selectmenu-text').html("Style 700,-");
         //TODO: Set style selected
         break;
       default:
