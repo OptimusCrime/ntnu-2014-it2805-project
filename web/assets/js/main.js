@@ -1,3 +1,10 @@
+/*
+ * Just random help function because I am lazy
+ */
+
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
 
 /*
  * Load map in the footer
@@ -78,93 +85,22 @@ function load_available(arr) {
     }
 }
 
-//Function for remembering the users choict before redirect order page
-function price_redirect() {
-  $('#bestill1').click(function(){
-    localStorage.setItem("redirect", "barn");
-  });
-  $('#bestill2').click(function(){
-    localStorage.setItem("redirect", "herre");
-  });
-  $('#bestill3').click(function(){
-    localStorage.setItem("redirect", "dame");
-  });
-  $('#bestill4').click(function(){
-    localStorage.setItem("redirect", "style");
-  });
+/*
+ * Load preselected product
+ */
 
-}
-
-//Function for initializing elements on the order page ( send form etc )
-function initialize_order() {
-  //if redirect from price:
-  if(localStorage.getItem("redirect") != null){
-    var cat = localStorage.getItem("redirect");
-    switch (cat) {
-      case "barn":
-        console.log("barn");
-        $('#product option[value=children]').attr('selected', 'selected');
-        $('#ui-selectmenu-text').html("Barn 200,-");
-        //TODO: Set barn selected
-        break;
-      case "herre":
-        console.log("herre");
-        $('#product option[value=gentleman]').attr('selected', 'selected');
-        $('#ui-selectmenu-text').html("Herre 300,-");
-        //TODO: Set herre selected
-        break;
-      case "dame":
-        console.log("dame");
-        $('#ui-id-1').val('lady');
-        $('#ui-selectmenu-text').html("Dame 400,-");
-        //TODO: Set dame selected
-        break;
-      case "style":
-        console.log("style");
-        $('#ui-id-1').val('style');
-        $('#ui-selectmenu-text').html("Style 700,-");
-        //TODO: Set style selected
-        break;
-      default:
-        break;
-     }
-    //Prepopulate select
-
-    localStorage.removeItem("redirect");
-  }
-
-
-  //Submit order
-  $('#submit-order').click(function(){
-    console.log('form submitted!');
-
-    var date = $('#calendar').val();
-    var slot = $('#ui-id-1 option:selected').text();
-    var product = $('#product option:selected').text();
-    var msg = $('#msg-order').val();
-
-    var XML = '<?xml version="1.0" encoding="UTF-8"?>';
-    XML += '<Order>'
-    XML += '<dato>' + date + '</dato>';
-    XML += '<slot>' + slot + '</slot>';
-    XML += '<product>' + product + '</product>';
-    XML += '<msg>' + msg  +'</msg>';
-    XML += '</Order>';
-
-    //Send xml somewhere
-    //var xmlhttp = new XMLHttpRequest();
-    //xmlhttp.open("POST","krekle.no:8081/hello",true);
-    //xmlhttp.setRequestHeader("Content-type","application/xml");
-    //xmlhttp.send(XML);
-
-
-    // Flash message and redirect user to home.
-    $('#submit-wrap').html("Din bestilling er reservert!")
-    setTimeout(function(){window.location.replace('index')}, 700);
-
-
-    console.log(XML);
-  });
+function load_preselected() {
+    // Get at GET-params
+    var queryDict = {}
+    location.search.substr(1).split("&").forEach(function(item) {
+        queryDict[item.split("=")[0]] = item.split("=")[1];
+    });
+    
+    // Check if "produkt" is set and is numeric
+    if (queryDict.hasOwnProperty('produkt')) {
+        // Set preselected value
+        $('#product').val(queryDict.produkt).selectmenu('refresh');
+    }
 }
 
 /*
@@ -176,7 +112,7 @@ $(document).ready(function () {
     load_map();
 
     // Calendar stuff
-    if ($('#calendar').length > 0) {
+    if ($('#order').length > 0) {
         // Load the calendar
         load_calendar();
 
@@ -187,12 +123,8 @@ $(document).ready(function () {
         $('#product').selectmenu({
             width: 400,
         });
+        
+        // Preselect value
+        load_preselected();
     }
-
-    //Price redirect
-    price_redirect();
-
-    // Order stuff (bestilling)
-    initialize_order();
-
 });

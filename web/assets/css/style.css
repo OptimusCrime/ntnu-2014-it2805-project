@@ -314,7 +314,19 @@ a:hover {
 #order .order-block.order-block-top-padding {
     padding-top: 15px;
 }
-#calendar .ui-widget {
+#order .order-block.order-block-unpoco-top-padding {
+    padding-top: 8px;
+}
+#order input[type="text"] {
+    background: none;
+    border: none;
+    width: 380px;
+    background-color: #7090a1;
+    padding: 9px 10px;
+    font-family: "Open Sans",sans-serif;
+    color: #fff;
+}
+#order .ui-widget {
     font-family: "Open Sans",sans-serif;
     color: #555;
     font-size: 16px;
@@ -419,17 +431,7 @@ a:hover {
     background-color: #cfdbe4;
     color: #7090a1;
 }
-#msg-order {
-    font-size: 14px;
-    line-height: 1.8;
-    color: #7090a1;
-    display: block;
-    overflow: hidden;
-    text-align: left;
-    width: 98%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+
 #submit-order {
     font-size: 14px;
     line-height: 1.8;

@@ -20,7 +20,7 @@
             </div>
             <div class="clear"></div>
         </div>
-        <div class="order-block">
+        <div class="order-block order-block-unpoco-top-padding">
             <div class="order-left">
                 <p>Velg produkt:</p>
             </div>
@@ -34,21 +34,21 @@
             </div>
             <div class="clear"></div>
         </div>
-        <div class="order-block">
+        <div class="order-block order-block-unpoco-top-padding">
             <div class="order-left">
                 <p>Eventuell beskjed:</p>
             </div>
             <div class="order-right">
-                <input id="msg-order" type="text">
+                <input type="text" />
             </div>
             <div class="clear"></div>
         </div>
-        <div class="order-block">
+        <div class="order-block order-block-unpoco-top-padding">
             <div class="order-left">
                 <p>&nbsp;</p>
             </div>
             <div id="submit-wrap" class="order-right">
-                <input id="submit-order" type="button" value="Bestill">
+                <input id="submit-order" type="button" value="Bestill" />
             </div>
             <div class="clear"></div>
         </div>

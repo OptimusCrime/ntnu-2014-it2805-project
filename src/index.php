@@ -94,6 +94,15 @@ class Loader {
             $this->template->display('index.tpl');
         }
         else {
+            // Remove any get parameters from the url
+            if (strstr($_SERVER['REQUEST_URI'], '?')) {
+                // Contains ?, split query
+                $split = explode('?', $_SERVER['REQUEST_URI'], 2);
+                
+                // Override the first part of the query
+                $_SERVER['REQUEST_URI'] = $split[0];
+            }
+            
             // Dynamically fetch template (or display 404)
             $q_raw = explode('/', $_SERVER['REQUEST_URI']);
             $q = [];
