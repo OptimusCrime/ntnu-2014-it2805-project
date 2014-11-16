@@ -1,7 +1,7 @@
 [[+include file="header.tpl"]]
 <div id="frontpage">
     <h2>Velkommen til</h2>
-    <h1>IKT-Firsør</h1>
+    <h1>IKT-Frisør</h1>
     <div id="frontpage-info">
         <p>Mandag - Lørdag: 10:00 - 16:00</p>
         <p>Herreklipp fra 300,-</p>
