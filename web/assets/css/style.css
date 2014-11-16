@@ -4,6 +4,7 @@ ul,ol { list-style: none; }
 fieldset,img { border: none; }
 caption,th { text-align: left; }
 table { border-collapse: collapse; border-spacing: 0; }
+iframe { display: block; }
 .clear { clear: both; }
 html{ overflow-y:scroll; }
 div { position: relative; }
@@ -418,27 +419,25 @@ a:hover {
     background-color: #cfdbe4;
     color: #7090a1;
 }
-
 #msg-order {
-  font-size: 14px;
-  line-height: 1.8;
-  color: #7090a1;
-  display: block;
-  overflow: hidden;
-  text-align: left;
-  width: 98%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #7090a1;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    width: 98%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-
 #submit-order {
-  font-size: 14px;
-  line-height: 1.8;
-  color: #7090a1;
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  width: 50%;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #7090a1;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    width: 50%;
 }
 
 /*
@@ -534,4 +533,21 @@ a:hover {
 }
 #bottom span.last {
     padding-right: 0px;
+}
+
+/*
+    DIYS
+*/
+
+#diys {
+    width: 590px;
+    margin: 0 auto;
+    text-align: center;
+}
+#diys h2 {
+    margin-top: 0px;
+    line-height: 35px;
+}
+#diys .block {
+    padding-bottom: 15px;
 }
