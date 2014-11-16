@@ -39,7 +39,7 @@ function load_calendar() {
             if (!calculated_days.hasOwnProperty(day)) {
                 // Temp array to keep the available slots in
                 var temp_arr = [];
-                
+
                 // We only work from 10:00 - 16:00 #layz
                 for (var i = 10; i <= 16; i++) {
                     // Actually this produces 1:2 chance, but whatever
@@ -48,14 +48,14 @@ function load_calendar() {
                         temp_arr.push(i);
                     }
                 }
-                
+
                 // Add
                 calculated_days[day] = temp_arr;
             }
-            
+
             // Display slots
             load_available(calculated_days[day]);
-            
+
             // Appply jQuery magic
             $('#slots select').selectmenu({
                 width: 400,
@@ -73,11 +73,42 @@ function load_available(arr) {
         for (var i = 0; i < arr.length; i++) {
             str += '<option value="' + arr[i] + '">' + arr[i] + ':00</option>';
         }
-        
+
         $('#slots').html('<select>' + str + '</select');
     }
 }
 
+
+function initialize_order() {
+  $('#submit-order').click(function(){
+    console.log('form submitted!');
+
+    var date = $('#calendar').val();
+    var slot = $('#slots.ui-selectmenu-text').html();
+    var product = $('#product-button.ui-selectmenu-text');
+    var msg = "Jeg vil ha barberhøvel!";
+
+    console.log(date);
+    console.log(slot);
+    console.log(product);
+
+    //Derp, vi skjønner dette
+    var XML = '<?xml version="1.0" encoding="UTF-8"?>';
+    XML += '<Order>'
+    XML += '<dato>' + date + '</dato>';
+    XML += '<slot>' + slot + '</slot>';
+    XML += '<msg>' + msg  +'</msg>';
+    XML += '</Order>';
+
+    //Send xml to somewhere
+    //var xmlhttp = new XMLHttpRequest();
+    //xmlhttp.open("POST","krekle.no:8081/hello",true);
+    //xmlhttp.setRequestHeader("Content-type","application/xml");
+    //xmlhttp.send(XML);
+
+    console.log(XML);
+  });
+}
 
 /*
  * jQuery!
@@ -86,18 +117,22 @@ function load_available(arr) {
 $(document).ready(function () {
     // Load map
     load_map();
-    
+
     // Calendar stuff
     if ($('#calendar').length > 0) {
         // Load the calendar
         load_calendar();
-        
+
         // Trigger click on the current day
         $('#calendar .ui-state-highlight').trigger('click');
-        
+
         // Apply jQuery magic to product dropdown
         $('#product').selectmenu({
             width: 400,
         });
     }
+
+    // Order stuff (bestilling)
+    initialize_order();
+
 });

@@ -48,7 +48,7 @@
                 <p>&nbsp;</p>
             </div>
             <div class="order-right">
-                <p>Send</p>
+                <input id="submit-order" type="button" value="Submit">
             </div>
             <div class="clear"></div>
         </div>
