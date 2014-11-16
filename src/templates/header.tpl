@@ -26,16 +26,16 @@
         </header>
         <nav id="menu">
             <ul class="menu">
-                <li[[+if $TOP_LEVEL_MENU == 'index']] class="selected"[[+/if]]>
+                <li[[+if $TOP_LEVEL_MENU == "index"]] class="selected"[[+/if]]>
                     <a href="">Forsiden</a>
                 </li>
-                <li[[+if $TOP_LEVEL_MENU == 'priser']] class="selected"[[+/if]]>
+                <li[[+if $TOP_LEVEL_MENU == "priser"]] class="selected"[[+/if]]>
                     <a href="priser">Priser</a>
                 </li>
-                <li[[+if $TOP_LEVEL_MENU == 'om-oss']] class="selected"[[+/if]]>
+                <li[[+if $TOP_LEVEL_MENU == "om-oss"]] class="selected"[[+/if]]>
                     <a href="om-oss">Om oss</a>
                 </li>
-                <li[[+if $TOP_LEVEL_MENU == 'produkter']] class="selected"[[+/if]]>
+                <li[[+if $TOP_LEVEL_MENU == "produkter"]] class="selected"[[+/if]]>
                     <a href="produkter">Produkter</a>
                     <ul class="sub-menu">
                         <li>
@@ -52,12 +52,12 @@
                 <li>
                     <a href="mailto:post@ikt-frisor.no">Kontakt oss</a>
                 </li>
+                <li[[+if $TOP_LEVEL_MENU == "diys"]] class="selected"[[+/if]]>
+                    <a href="diys">DIYS</a>
+                </li>  
                 <li class="order[[+if $TOP_LEVEL_MENU == 'bestilling']] selected[[+/if]]">
                     <a href="bestilling">Bestilling</a>
-                </li>
-                <li[[+if $TOP_LEVEL_MENU == 'diys']] class="selected"[[+/if]]>
-                    <a href="diys">DIYS</a>
-                </li>                
+                </li>          
             </ul>
         </nav>
         <div class="clear"></div>
