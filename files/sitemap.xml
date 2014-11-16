@@ -43,6 +43,12 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>http://www.itk-firsor.no/diys</loc>
+        <lastmod>2014-01-25T11:25:05+01:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>http://www.itk-firsor.no/bestilling</loc>
         <lastmod>2014-05-01T11:28:22+01:00</lastmod>
         <changefreq>daily</changefreq>
