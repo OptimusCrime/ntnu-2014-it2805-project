@@ -78,29 +78,74 @@ function load_available(arr) {
     }
 }
 
+//Function for remembering the users choict before redirect order page
+function price_redirect() {
+  $('#bestill1').click(function(){
+    localStorage.setItem("redirect", "barn");
+  });
+  $('#bestill2').click(function(){
+    localStorage.setItem("redirect", "herre");
+  });
+  $('#bestill3').click(function(){
+    localStorage.setItem("redirect", "dame");
+  });
+  $('#bestill4').click(function(){
+    localStorage.setItem("redirect", "style");
+  });
 
+}
+
+//Function for initializing elements on the order page ( send form etc )
 function initialize_order() {
+  //if redirect from price:
+  if(localStorage.getItem("redirect") != null){
+    var cat = localStorage.getItem("redirect");
+    switch (cat) {
+      case "barn":
+        console.log("barn");
+        //TODO: Set barn selected
+        break;
+      case "herre":
+        console.log("herre");
+        //TODO: Set herre selected
+        break;
+      case "dame":
+        console.log("dame");
+        //TODO: Set dame selected
+        break;
+      case "style":
+        console.log("style");
+        //TODO: Set style selected
+        break;
+      default:
+        break;
+     }
+    //Prepopulate select
+
+    localStorage.removeItem("redirect");
+  }
+
+
+  //Submit order
   $('#submit-order').click(function(){
     console.log('form submitted!');
 
     var date = $('#calendar').val();
-    var slot = $('#slots.ui-selectmenu-text').html();
-    var product = $('#product-button.ui-selectmenu-text');
+    var slot = $('#slots.ui-selectmenu-text option:selected').text(); // --> Undefined ?
+    var product = $('#product-button.ui-selectmenu-text option:selected').text(); // --> Undefined ?
     var msg = "Jeg vil ha barberhøvel!";
 
-    console.log(date);
-    console.log(slot);
-    console.log(product);
-
-    //Derp, vi skjønner dette
+    //Doing this without a lib, to show the guy that we know XML
+    //TODO: Fix none in slot and product
     var XML = '<?xml version="1.0" encoding="UTF-8"?>';
     XML += '<Order>'
     XML += '<dato>' + date + '</dato>';
     XML += '<slot>' + slot + '</slot>';
+    XML += '<product>' + product + '</product>';
     XML += '<msg>' + msg  +'</msg>';
     XML += '</Order>';
 
-    //Send xml to somewhere
+    //Send xml somewhere
     //var xmlhttp = new XMLHttpRequest();
     //xmlhttp.open("POST","krekle.no:8081/hello",true);
     //xmlhttp.setRequestHeader("Content-type","application/xml");
@@ -131,6 +176,9 @@ $(document).ready(function () {
             width: 400,
         });
     }
+
+    //Price redirect
+    price_redirect();
 
     // Order stuff (bestilling)
     initialize_order();
