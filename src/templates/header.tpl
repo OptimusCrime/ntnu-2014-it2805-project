@@ -55,6 +55,9 @@
                 <li class="order[[+if $TOP_LEVEL_MENU == 'bestilling']] selected[[+/if]]">
                     <a href="bestilling">Bestilling</a>
                 </li>
+                <li[[+if $TOP_LEVEL_MENU == 'diys']] class="selected"[[+/if]]>
+                    <a href="diys">DIYS</a>
+                </li>                
             </ul>
         </nav>
         <div class="clear"></div>
