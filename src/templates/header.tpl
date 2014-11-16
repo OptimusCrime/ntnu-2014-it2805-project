@@ -42,7 +42,7 @@
                             <a href="produkter/hairgel">Hårgelé</a>
                         </li>
                         <li>
-                            <a href="produkter/showerpack">Balsam &amp; Shampoo &ndash; pakke</a>
+                            <a href="produkter/shower-pack">Balsam &amp; Shampoo &ndash; pakke</a>
                         </li>
                         <li>
                             <a href="produkter/barberkit">Barberkit</a>
