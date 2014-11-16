@@ -39,7 +39,7 @@
                 <p>Eventuell beskjed:</p>
             </div>
             <div class="order-right">
-                <p>derp</p>
+                <input id="msg-order" type="text">
             </div>
             <div class="clear"></div>
         </div>
@@ -48,7 +48,7 @@
                 <p>&nbsp;</p>
             </div>
             <div id="submit-wrap" class="order-right">
-                <input id="submit-order" type="button" value="Submit">
+                <input id="submit-order" type="button" value="Reserver">
             </div>
             <div class="clear"></div>
         </div>

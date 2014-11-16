@@ -131,12 +131,10 @@ function initialize_order() {
     console.log('form submitted!');
 
     var date = $('#calendar').val();
-    var slot = $('#slots.ui-selectmenu-text option:selected').text(); // --> Undefined ?
-    var product = $('#product-button.ui-selectmenu-text option:selected').text(); // --> Undefined ?
-    var msg = "Jeg vil ha barberhøvel!";
+    var slot = $('#ui-id-1 option:selected').text();
+    var product = $('#product option:selected').text();
+    var msg = $('#msg-order').val();
 
-    //Doing this without a lib, to show the guy that we know XML
-    //TODO: Fix none in slot and product
     var XML = '<?xml version="1.0" encoding="UTF-8"?>';
     XML += '<Order>'
     XML += '<dato>' + date + '</dato>';
@@ -152,8 +150,11 @@ function initialize_order() {
     //xmlhttp.send(XML);
 
 
+    // Flash message and redirect user to home.
     $('#submit-wrap').html("Din bestilling er reservert!")
     setTimeout(function(){window.location.replace('index')}, 700);
+
+
     console.log(XML);
   });
 }

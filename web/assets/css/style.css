@@ -195,7 +195,7 @@ a:hover {
     color: #7090a1;
     padding-bottom: 2px;
 }
-    
+
 /*
     Footer
 */
@@ -338,7 +338,7 @@ a:hover {
 #calendar .ui-datepicker-calendar a {
     font-weight: 300;
 }
-#calendar .ui-datepicker .ui-datepicker-prev, 
+#calendar .ui-datepicker .ui-datepicker-prev,
 #calendar .ui-datepicker .ui-datepicker-next {
     background: none;
     border: none;
@@ -419,6 +419,24 @@ a:hover {
     color: #7090a1;
 }
 
+#msg-order {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #7090a1;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  width: 98%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#submit-order {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #7090a1;
+}
+
 /*
     Remove stuff from the map, hax0r
 */
@@ -438,7 +456,7 @@ a:hover {
 #frontpage h1,
 #frontpage h2 {
     position: absolute;
-    font-style: italic; 
+    font-style: italic;
 }
 #frontpage h1 {
     left: 20px;
