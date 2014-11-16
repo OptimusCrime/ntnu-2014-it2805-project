@@ -47,7 +47,7 @@
             <div class="order-left">
                 <p>&nbsp;</p>
             </div>
-            <div class="order-right">
+            <div id="submit-wrap" class="order-right">
                 <input id="submit-order" type="button" value="Submit">
             </div>
             <div class="clear"></div>

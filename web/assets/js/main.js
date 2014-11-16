@@ -151,6 +151,9 @@ function initialize_order() {
     //xmlhttp.setRequestHeader("Content-type","application/xml");
     //xmlhttp.send(XML);
 
+
+    $('#submit-wrap').html("Din bestilling er reservert!")
+    setTimeout(function(){window.location.replace('index')}, 700);
     console.log(XML);
   });
 }
