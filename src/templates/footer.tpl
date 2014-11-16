@@ -3,7 +3,7 @@
 <div id="footer">
     <div id="footer-inner">
         <div class="footer-column">
-            <h3>ITK-Frisør</h3>
+            <h3>IKT-Frisør</h3>
 
             <p>&nbsp;</p>
 
@@ -23,7 +23,7 @@
 </div>
 <div id="bottom">
     <p>
-        <span class="first">ITK-Frisør &copy; 2014</span>::
+        <span class="first">IKT-Frisør &copy; 2014</span>::
         <span><a href="priser">Priser</a></span>::
         <span><a href="om">Om oss</a></span>::
         <span><a href="produkter">Produkter</a></span>::
