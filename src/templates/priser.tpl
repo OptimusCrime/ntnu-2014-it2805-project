@@ -14,7 +14,7 @@
             <p>Styling</p>
         </div>
         <div class="price-button">
-            <a id="bestill1" href="bestilling">Bestill time</a>
+            <a href="bestilling?produkt=1">Bestill time</a>
         </div>
     </div>
     <div class="price-element">
@@ -26,10 +26,10 @@
             <p class="info">Inkluderer:</p>
             <p>Vask</p>
             <p>Klipp</p>
-            <p> Farge & Styling</p>
+            <p>Farge &amp; Styling</p>
         </div>
         <div class="price-button">
-            <a id="bestill2" href="bestilling">Bestill time</a>
+            <a href="bestilling?produkt=2">Bestill time</a>
         </div>
     </div>
     <div class="price-element">
@@ -44,7 +44,7 @@
             <p>Styling</p>
         </div>
         <div class="price-button">
-            <a id="bestill3" href="bestilling">Bestill time</a>
+            <a href="bestilling?produkt=3">Bestill time</a>
         </div>
     </div>
     <div class="price-element">
@@ -54,12 +54,12 @@
         <div class="price-body">
             <div class="price-circle circle-1">600</div>
             <p class="info">Inkluderer:</p>
-            <p>Vask & Kur</p>
-            <p>Klipp & Farge</p>
+            <p>Vask &amp; Kur</p>
+            <p>Klipp &amp; Farge</p>
             <p>Styling</p>
         </div>
         <div class="price-button">
-            <a id="bestill4" href="bestilling">Bestill time</a>
+            <a href="bestilling?produkt=4">Bestill time</a>
         </div>
     </div>
     <div class="clear"></div>
