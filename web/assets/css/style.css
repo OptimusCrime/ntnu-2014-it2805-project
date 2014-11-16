@@ -435,6 +435,10 @@ a:hover {
   font-size: 14px;
   line-height: 1.8;
   color: #7090a1;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  width: 50%;
 }
 
 /*
