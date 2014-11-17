@@ -14,7 +14,7 @@
             <p>Styling</p>
         </div>
         <div class="price-button">
-            <a href="bestilling?produkt=1">Bestill time</a>
+            <a href="bestilling?produkt=barn">Bestill time</a>
         </div>
     </div>
     <div class="price-element">
@@ -29,7 +29,7 @@
             <p>Farge &amp; Styling</p>
         </div>
         <div class="price-button">
-            <a href="bestilling?produkt=2">Bestill time</a>
+            <a href="bestilling?produkt=herre">Bestill time</a>
         </div>
     </div>
     <div class="price-element">
@@ -44,7 +44,7 @@
             <p>Styling</p>
         </div>
         <div class="price-button">
-            <a href="bestilling?produkt=3">Bestill time</a>
+            <a href="bestilling?produkt=dame">Bestill time</a>
         </div>
     </div>
     <div class="price-element">
@@ -59,7 +59,7 @@
             <p>Styling</p>
         </div>
         <div class="price-button">
-            <a href="bestilling?produkt=4">Bestill time</a>
+            <a href="bestilling?produkt=style">Bestill time</a>
         </div>
     </div>
     <div class="clear"></div>

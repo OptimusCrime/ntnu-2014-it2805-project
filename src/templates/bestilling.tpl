@@ -26,9 +26,9 @@
             </div>
             <div class="order-right">
                 <select name="product" id="product">
-                    <option value="children">Barn &mdash; 200,-</option>
-                    <option value="gentleman">Herre &mdash; 300,-</option>
-                    <option value="lady">Dame &mdash; 400,-</option>
+                    <option value="barn">Barn &mdash; 200,-</option>
+                    <option value="herre">Herre &mdash; 300,-</option>
+                    <option value="dame">Dame &mdash; 400,-</option>
                     <option value="style">Style &mdash; 700,-</option>
                 </select>
             </div>
