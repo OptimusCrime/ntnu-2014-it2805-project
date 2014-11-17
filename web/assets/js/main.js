@@ -95,12 +95,13 @@ function load_preselected() {
     location.search.substr(1).split("&").forEach(function(item) {
         queryDict[item.split("=")[0]] = item.split("=")[1];
     });
-    
+
     // Check if "produkt" is set and is numeric
     if (queryDict.hasOwnProperty('produkt')) {
         // Set preselected value
         $('#product').val(queryDict.produkt).selectmenu('refresh');
     }
+
 }
 
 /*
@@ -123,8 +124,16 @@ $(document).ready(function () {
         $('#product').selectmenu({
             width: 400,
         });
-        
-        // Preselect value
+
+        //Preselect value
         load_preselected();
+
+        // Redirect and flash user on click
+        $('#submit-order').click(function(){
+            $('#submit-wrap').html("Din bestilling er reservert!")
+            setTimeout(function(){
+              window.location.replace('bestilling')
+            }, 1000);
+        });
     }
 });
