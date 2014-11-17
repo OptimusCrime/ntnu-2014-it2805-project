@@ -96,16 +96,16 @@ a:hover {
     padding: 5px 13px;
 }
 #menu li:hover {
-    background: none repeat scroll 0 0 #7090a1;
+    background: none repeat scroll 0 0 #cfdbe4;
 }
 #menu li:hover a {
-    color: #fff;
+    color: #7090a1;
 }
 #menu li.selected {
-    background: none repeat scroll 0 0 #7090a1;
+    background: none repeat scroll 0 0 #cfdbe4;
 }
 #menu li.selected a {
-    color: #cfdbe4;
+    color: #7090a1;
 }
 #menu li ul {
     background: none repeat scroll 0 0 rgba(255, 255, 255, 0.96);
@@ -203,20 +203,20 @@ a:hover {
 
 #footer {
     background: none repeat scroll 0 0 #b7c9d3;
-    color: #fff;
+    color: #7090a1;
     margin-top: 40px;
     padding: 20px 0;
     width: 100%;
 }
 #footer h3 {
-    color: #fff;
+    color: #7090a1;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 10px;
 }
 #footer p, #footer a {
-    color: #fff;
+    color: #7090a1;
     font-size: 15px;
     line-height: 24px;
 }
