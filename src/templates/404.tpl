@@ -2,5 +2,5 @@
 <h1>Siden du prøver å nå finnes ikke</h1>
 <div class="block">
     <p>Siden du prøver å nå finnes ikke. Vi beklager dette.</p>
-</div
+</div>
 [[+include file="footer.tpl"]]
