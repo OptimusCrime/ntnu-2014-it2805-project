@@ -29,7 +29,8 @@
         <span><a href="produkter">Produkter</a></span>::
         <span><a href="mailto:itk-frisor.no">Kontakt</a></span>::
         <span><a href="bestilling">Bestilling</a></span>::
-        <span class="last"><a href="sitemap.xml">Sitemap</a></span>
+        <span><a href="sitemap.xml">Sitemap</a></span>::
+        <span class="last"><a href="resources">Resources</a></span>
     </p>
 </div>
 </body>
