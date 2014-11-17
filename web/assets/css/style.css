@@ -555,3 +555,36 @@ a:hover {
 #diys .block {
     padding-bottom: 15px;
 }
+
+/*
+    Products
+*/
+
+.product {
+    width: 466px;
+    float: left;
+    padding: 15px;
+    background-color: #cfdbe4;
+    margin-bottom: 15px;
+}
+.product.odd {
+    margin-left: 15px;
+}
+.product-image {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+}
+.product-left,
+.product-right {
+    position: absolute;
+    top: 0px;
+    color: #7090a1;
+}
+.product-left {
+    left: 0px;
+}
+.product-right {
+    right: 0px;
+    text-align: right;
+}
