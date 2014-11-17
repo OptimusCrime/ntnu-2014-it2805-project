@@ -431,16 +431,18 @@ a:hover {
     background-color: #cfdbe4;
     color: #7090a1;
 }
-
-#submit-order {
-    font-size: 14px;
-    line-height: 1.8;
-    color: #7090a1;
-    display: block;
-    overflow: hidden;
-    text-align: center;
+#submit-wrap input {
     width: 50%;
+    background: none;
+    border: none;
+    background-color: #7090a1;
+    color: #fff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 6px;
+    margin-bottom: 14px;
 }
+    
 
 /*
     Remove stuff from the map, hax0r
