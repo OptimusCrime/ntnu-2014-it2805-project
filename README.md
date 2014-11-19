@@ -1,12 +1,13 @@
 IKT - Frisør
 ============
 
-Group project i IT2805 for Ingeborg, Kristian and Thomas.
+NTNU group project in IT2805 fall 2014 for Ingeborg, Kristian and Thomas.
 
 Technologies
 ------------
 
-The website is written is using a simple PHP class and a PHP template engine called Smarty.
+We wrote a simple PHP Loader class to load a given file based on the request from the user. In addition to this class we also
+use a PHP template engine called Smarty to ease frontside development.
 The frontside is simple HTML5, CSS3 and Javascript. Javascript is enhanced using jQuery to
 utilize plugins simpler syntax. With jQuery we also use the library jQuery UI which gives
 easy access to a calendar- and selection-plugin.
