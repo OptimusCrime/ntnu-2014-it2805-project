@@ -6,11 +6,13 @@ NTNU group project in IT2805 fall 2014 for Ingeborg, Kristian and Thomas.
 Technologies
 ------------
 
-We wrote a simple PHP Loader class to load a given file based on the request from the user. In addition to this class we also
-use a PHP template engine called Smarty to ease frontside development.
-The frontside is simple HTML5, CSS3 and Javascript. Javascript is enhanced using jQuery to
-utilize plugins simpler syntax. With jQuery we also use the library jQuery UI which gives
-easy access to a calendar- and selection-plugin.
+We wrote a simple PHP Loader class to load a given file based on the request from the user. 
+In addition to this class we also use a PHP template engine called [Smarty](http://www.smarty.net) to ease frontside 
+development. 
+
+The frontside is simple HTML5, CSS3 and Javascript. Javascript is enhanced using [jQuery](http://www.jquery.com) to 
+utilize plugins simpler syntax. With jQuery we also use the library [jQuery UI](http://www.jqueryui.com) which gives easy 
+access to a calendar- and selection-plugin.
 
 We decided to use PHP to be able to use custom routing in our website. This means that instead
 of having a colletion of html files matching the request, like om-oss.html, we have templates
@@ -27,7 +29,7 @@ although we have not used this very much.
 Installation
 ------------
 
-Our project uses (Composer)[http://getcomposer.org]. You can install Composer by running the following
+Our project uses [Composer](http://getcomposer.org). You can install Composer by running the following
 command:
 
     curl -sS https://getcomposer.org/installer | php
