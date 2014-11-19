@@ -1,23 +1,48 @@
 IKT - Frisør
-===========
-
-Gruppeprosjekt i IT2805 for Ingeborg, Kristian og Thomas.
-
-
-Installasjon
 ============
 
-Prosjektet bruker Composer. Installer Composer ved å kjøre følgende kommando:
+Group project i IT2805 for Ingeborg, Kristian and Thomas.
+
+Technologies
+------------
+
+The website is written is using a simple PHP class and a PHP template engine called Smarty.
+The frontside is simple HTML5, CSS3 and Javascript. Javascript is enhanced using jQuery to
+utilize plugins simpler syntax. With jQuery we also use the library jQuery UI which gives
+easy access to a calendar- and selection-plugin.
+
+We decided to use PHP to be able to use custom routing in our website. This means that instead
+of having a colletion of html files matching the request, like om-oss.html, we have templates
+that are automatically fetched. This also makes it simple to build subdirectories without
+actually having to place files relative to each other. Another feature is the possibility to
+have custom 404 (not found) pages.
+
+The power of the template engine is the possibility to include portions of a template in other
+templates. This means that a template can be split into footer and header and have these included
+in all the other templates. Making a change to the footer is then a simple job because there is
+only one file to edit. This system also makes it possible to have dynamic titles and content,
+although we have not used this very much.
+
+Installation
+------------
+
+Our project uses (Composer)[http://getcomposer.org]. You can install Composer by running the following
+command:
 
     curl -sS https://getcomposer.org/installer | php
 
-Etter å ha installert Composer må du installere avhengighetene til applikasjonen. Gjør dette med:
+After installed Composer you must install the dependencies we use in our application. You do this with the
+command:
 
     php composer.phar update
 
-Kjør nettsiden
-==============
+Running the website
+-------------------
 
-For å kjøre nettsiden gjennom PHPs innebygde server må du skrive følgende kommando:
+You can run the website using PHPs built in server by running the following command:
 
     php -S 0.0.0.0:8080 -t web web/route.php
+
+You can now access the website on your browser on:
+
+    http://localhost:8080
