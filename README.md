@@ -1,18 +1,18 @@
 IKT - Frisør
 ============
 
-NTNU group project in IT2805 fall 2014 for Ingeborg, Kristian and Thomas.
+NTNU group project in IT2805 fall 2014 for Thomas Gautvedt, Ingeborg Ødegård Oftedal and Kristian Ekle
 
 Technologies
 ------------
 
 We wrote a simple PHP Loader class to load a given file based on the request from the user. 
-In addition to this class we also use a PHP template engine called [Smarty](http://www.smarty.net) to ease frontside 
-development. 
+In addition to this class we also use a PHP template engine called [Smarty](http://www.smarty.net) 
+to ease frontside development. 
 
-The frontside is simple HTML5, CSS3 and Javascript. Javascript is enhanced using [jQuery](http://jquery.com) to 
-utilize plugins simpler syntax. With jQuery we also use the library [jQuery UI](http://jqueryui.com) which gives easy 
-access to a calendar- and selection-plugin.
+The frontside is simple HTML5, CSS3 and Javascript. Javascript is enhanced using [jQuery](http://jquery.com) 
+to utilize plugins simpler syntax. With jQuery we also use the library [jQuery UI](http://jqueryui.com) 
+which gives easy access to a calendar- and selection-plugin.
 
 We decided to use PHP to be able to use custom routing in our website. This means that instead
 of having a colletion of html files matching the request, like om-oss.html, we have templates
