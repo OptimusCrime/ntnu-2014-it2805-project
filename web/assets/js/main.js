@@ -130,9 +130,9 @@ $(document).ready(function () {
 
         // Redirect and flash user on click
         $('#submit-order').click(function(){
-            $('#submit-wrap').html("Din bestilling er reservert!")
+            $('#submit-wrap').html("Din bestilling er reservert!");
             setTimeout(function(){
-              window.location.replace('bestilling')
+				window.location.replace('bestilling');
             }, 1000);
         });
     }
