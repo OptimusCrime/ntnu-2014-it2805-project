@@ -10,8 +10,8 @@ We wrote a simple PHP Loader class to load a given file based on the request fro
 In addition to this class we also use a PHP template engine called [Smarty](http://www.smarty.net) to ease frontside 
 development. 
 
-The frontside is simple HTML5, CSS3 and Javascript. Javascript is enhanced using [jQuery](http://www.jquery.com) to 
-utilize plugins simpler syntax. With jQuery we also use the library [jQuery UI](http://www.jqueryui.com) which gives easy 
+The frontside is simple HTML5, CSS3 and Javascript. Javascript is enhanced using [jQuery](http://jquery.com) to 
+utilize plugins simpler syntax. With jQuery we also use the library [jQuery UI](http://jqueryui.com) which gives easy 
 access to a calendar- and selection-plugin.
 
 We decided to use PHP to be able to use custom routing in our website. This means that instead
@@ -46,6 +46,6 @@ You can run the website using PHPs built in server by running the following comm
 
     php -S 0.0.0.0:8080 -t web web/route.php
 
-You can now access the website on your browser on:
+You can now access the website on your browser at:
 
     http://localhost:8080
