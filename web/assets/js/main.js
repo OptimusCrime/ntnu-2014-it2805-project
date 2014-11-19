@@ -125,15 +125,42 @@ $(document).ready(function () {
             width: 400,
         });
 
-        //Preselect value
+        // Preselect value
         load_preselected();
-
-        // Redirect and flash user on click
-        $('#submit-order').click(function(){
-            $('#submit-wrap').html("Din bestilling er reservert!");
-            setTimeout(function(){
-				window.location.replace('bestilling');
-            }, 1000);
+        
+        // On submit validation
+        $('#order-form').on('submit', function () {
+            var error = false;
+            var error_msg = [];
+            
+            // Check if a slot is selected
+            if (typeof $('#slots select').val() == 'undefined') {
+                error = true;
+                error_msg.push('Velg et klokkeslett.');
+            }
+            
+            // Check if name is filled out
+            if ($('#name').val().length == 0) {
+                error = true;
+                error_msg.push('Fyll ut et navn.');
+            }
+            
+            // Check if any error was returned
+            if (error) {
+                // Display error
+                alert('Vennligst fiks følgende feil i skjemaet:\n\n' + error_msg.join('\n'));
+            }
+            else {
+                // No error, "submit" and redirect
+                
+                $('#submit-wrap').html("Din bestilling er reservert!");
+                setTimeout(function(){
+                    window.location.replace('bestilling');
+                }, 1000);
+            }
+            
+            // Avoid normal behavior
+            return false;
         });
     }
 });

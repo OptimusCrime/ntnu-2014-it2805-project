@@ -1,6 +1,6 @@
 [[+assign var="TITLE" value="Bestilling"]][[+include file="header.tpl"]]
 <h1 class="center">Bestilling av time</h1>
-<form action="bestilling" method="post">
+<form action="bestilling" method="post" id="order-form" name="order-form">
     <div id="order" class="block">
         <div class="order-block">
             <div class="order-left">
@@ -36,10 +36,19 @@
         </div>
         <div class="order-block order-block-unpoco-top-padding">
             <div class="order-left">
+                <p>Ditt navn:</p>
+            </div>
+            <div class="order-right">
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="order-block order-block-unpoco-top-padding">
+            <div class="order-left">
                 <p>Eventuell beskjed:</p>
             </div>
             <div class="order-right">
-                <input type="text" />
+                <input type="text" name="msg" id="msg" />
             </div>
             <div class="clear"></div>
         </div>
@@ -48,7 +57,7 @@
                 <p>&nbsp;</p>
             </div>
             <div id="submit-wrap" class="order-right">
-                <input id="submit-order" type="button" value="Bestill" />
+                <input id="submit-order" type="submit" value="Bestill" />
             </div>
             <div class="clear"></div>
         </div>
